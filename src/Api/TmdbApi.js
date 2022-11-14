@@ -1,6 +1,6 @@
 const API_KEY = '07c62ca6a5ca37b367f23057a0566606';
 
-const categories = [
+export const categories = [
   {
     name: 'trending',
     title: 'Em alta',
@@ -31,16 +31,11 @@ const categories = [
     title: 'Documentários',
     path: `/discover/tv?api_key=${API_KEY}&with_genres=99`,
   },
-  {
-    name: 'documentaries',
-    title: 'Documentários',
-    path: `/movie/latest?api_key=${API_KEY}&language=pt-BR`,
-  },
 ];
 
 export const getMovies = async (path) => {
   try {
-    const url = `https://api.themoviedb.org/3/${path}`;
+    const url = `https://api.themoviedb.org/3${path}`;
 
     const response = await fetch(url);
 
