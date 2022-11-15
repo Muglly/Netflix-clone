@@ -4,5 +4,5 @@
 
 [] NavBar
 [] Destaques
-[] Em alta
+[x] Em alta
 [x] Filmes de cada categoria
