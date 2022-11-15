@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { getMovies } from '../Api/TmdbApi';
+import { getMovies } from '../../Api/TmdbApi';
 
-export default function Row({ title, path }) {
+import './Row.css';
+
+const imageHost = 'https://image.tmdb.org/t/p/original/';
+export default function Row({ title, path, isLarge }) {
   const [movies, setMovies] = useState([]);
 
   const fetchMovies = async (_path) => {
@@ -22,7 +25,14 @@ export default function Row({ title, path }) {
       <h2 className="row-header">{title}</h2>
       <div className="row-cards">
         {movies?.map((movie) => {
-          return <img key={movie.id} src={movie.poster_path} alt={movie.name}></img>;
+          return (
+            <img
+              className={`movie-card ${isLarge && 'movie-card-large'}`}
+              key={movie.id}
+              src={`${imageHost}${movie.poster_path}`}
+              alt={movie.name}
+            ></img>
+          );
         })}
       </div>
     </div>
