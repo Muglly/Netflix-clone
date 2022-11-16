@@ -48,7 +48,7 @@ export default function Banner() {
           <button className="banner-button">Minha Lista</button>
         </div>
         <div className="banner-description">
-          <span>{truncate(movie?.overview)}</span>
+          <span>{truncate(movie?.overview, 150)}</span>
         </div>
       </div>
     </header>

@@ -2,20 +2,7 @@
   "env": {
     "es2021": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "airbnb/hooks",
-    "some-other-config-you-use",
-    "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/babel",
-    "prettier/flowtype",
-    "prettier/react",
-    "prettier/standard",
-    "prettier/unicorn",
-    "prettier/vue"
-  ],
+  "extends": ["plugin:react/recommended", "airbnb", "airbnb/hooks", "prettier", "prettier/react"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
