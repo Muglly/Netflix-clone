@@ -2,11 +2,34 @@
   "env": {
     "es2021": true
   },
-  "extends": ["plugin:react/recommended", "airbnb", "airbnb/hooks", "prettier", "prettier/react"],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "some-other-config-you-use",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/babel",
+    "prettier/flowtype",
+    "prettier/react",
+    "prettier/standard",
+    "prettier/unicorn",
+    "prettier/vue"
+  ],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "react-native"]
+  "plugins": ["react", "react-native"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extension": [".js", ".jsx"]
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off"
+  }
 }

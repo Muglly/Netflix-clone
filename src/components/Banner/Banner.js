@@ -28,6 +28,10 @@ export default function Banner() {
     fetchRandomMovie();
   }, []);
 
+  function truncate(str, n) {
+    return str?.length > n ? str.substring(0, n - 1) + '...' : str;
+  }
+
   return (
     <header
       className="banner-container"
@@ -43,7 +47,9 @@ export default function Banner() {
           <button className="banner-button">Assistir</button>
           <button className="banner-button">Minha Lista</button>
         </div>
-        <div className="banner-description"></div>
+        <div className="banner-description">
+          <span>{truncate(movie?.overview)}</span>
+        </div>
       </div>
     </header>
   );
