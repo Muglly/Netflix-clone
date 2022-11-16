@@ -17,7 +17,7 @@ Aplicação frontend do projeto construído utilizando React.
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Rafa-react" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-  <a href="https://netflix-clone-662d8.web.app/">Acessar</a>
+  <a href="https://netflix-clone-662d8.web.app/" target="_blank">Acessar</a>
 </div>
 <br/>
 
